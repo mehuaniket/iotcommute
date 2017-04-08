@@ -12,3 +12,4 @@ python:
 # command to install dependencies
 install:
   - pip install .
+script: pytest
