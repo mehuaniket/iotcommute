@@ -273,6 +273,20 @@ class WebSocket(object):
         except:
             self.socket.close()
             raise
+
+    def get_state(self, sensor):
+        """
+        this function will get last state of sensor you just need to pass sensor name.
+        next json will be the sensor state.so you need to run this only in starting stage.
+        otherwise it hard to keep track of.
+        """
+        try:
+            struct_msg = {"method": "get", "sensor": sensor}
+            self.socket.send(json.dumps(struct_msg))
+            return True
+        except:
+            self.socket.close()
+            raise
     def send_payload(self,payload):
         """
         this function will help client to send message to server in abstract way 
