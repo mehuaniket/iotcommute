@@ -28,5 +28,5 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Software Development :: Libraries"
     ],
-    install_requires=["requests", "websocket-client"]
+    install_requires=["requests", "websocket-client","pytest"]
 )
