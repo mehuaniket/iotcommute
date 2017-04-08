@@ -1,5 +1,6 @@
 # IOT commute client for Python
 --------------------------------
+[![Build Status](https://travis-ci.org/kodani/iotcommute.svg?branch=master)](https://travis-ci.org/kodani/iotcommute)
 Aniket Patel (c) 2017
 License
 -------
