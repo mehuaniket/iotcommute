@@ -6,19 +6,16 @@ import serial
 # Initialise.
 iws = WebSocket("26CGWO23L3WRWUVRJ04N", "BMUMWAS8NEAILTG","device")
 try:
-    ser = serial.Serial('/dev/cu.usbmodemFD121',9600)
+    ser = serial.Serial('/dev/cu.usbmodemFA131',9600)
 except serial.serialutil.SerialException:
     print "Connect your arduino device correctly"
 
 # Callback for tick reception.
-global value
-value=1
 
 def on_tick(tick, ws):
-    if "value" in tick:
-        global value
-        print tick
-        ser.write(tick['value'])
+    global ser  
+    ser.write(str(tick['value']))
+    print tick['value']
     # Callback for successful connection.
 
 def on_connect(ws):

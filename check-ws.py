@@ -3,7 +3,7 @@ from iotcommute import WebSocket
 import random
 import time
 # Initialise.
-iws = WebSocket("L1SEIUDU1MC996W48L8Q", "FY6ODPIVU522SY1","client")
+iws = WebSocket("GK8N7MOTE9XRTVROVRXM", "0OXWDF6GNWS38XV","client")
 # Callback for tick reception.
 global value
 value=1

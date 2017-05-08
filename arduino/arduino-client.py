@@ -6,19 +6,20 @@ import time
 iws = WebSocket("26CGWO23L3WRWUVRJ04N", "BMUMWAS8NEAILTG","client")
 # Callback for tick reception.
 global value
-value=1
 
 def on_tick(tick, ws):
-    if "value" in tick:
-        print tick["value"]
-        value = raw_input("Please enter delay value for LED ")
-        ws.send_message("LED",value)
+    UserInput(ws)
+    pass
 
 def on_connect(ws):
     print("connection is established")
     ws.get_state("LED")
 
-    
+def UserInput(ws):
+    value = int(raw_input("Please enter delay value for LED "))
+    ws.send_message("LED",int(value))
+    UserInput(ws)
+
 iws.on_tick = on_tick
 iws.on_connect = on_connect
 # Infinite loop on the main thread. Nothing after this will run.
