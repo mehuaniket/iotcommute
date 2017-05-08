@@ -1,0 +1,26 @@
+# PynSource Version 1.1
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin.'}
+{'type':'umlshape', 'id':'MainHandler', 'x':24, 'y':69, 'width':102, 'height':62, 'attrs':'', 'meths':'get'}
+{'type':'umlshape', 'id':'LoginHandler', 'x':200, 'y':5, 'width':111, 'height':111, 'attrs':'uname|pword', 'meths':'get|post'}
+{'type':'umlshape', 'id':'WSHandler', 'x':582, 'y':158, 'width':86, 'height':215, 'attrs':'device|key|side|conn|db|coll|cursor|eventinject', 'meths':'open|run|on_message|on_close'}
+{'type':'umlshape', 'id':'BaseHandler', 'x':347, 'y':129, 'width':106, 'height':62, 'attrs':'', 'meths':'get_current_user'}
+{'type':'umlshape', 'id':'MydeviceHandler', 'x':52, 'y':148, 'width':136, 'height':85, 'attrs':'id', 'meths':'get'}
+{'type':'umlshape', 'id':'DocsHandler', 'x':59, 'y':458, 'width':102, 'height':85, 'attrs':'id', 'meths':'get'}
+{'type':'umlshape', 'id':'CreateHandler', 'x':42, 'y':283, 'width':119, 'height':137, 'attrs':'id|dname|did|dkey', 'meths':'get|post'}
+{'type':'umlshape', 'id':'LogoutHandler', 'x':216, 'y':384, 'width':119, 'height':62, 'attrs':'', 'meths':'get'}
+{'type':'umlshape', 'id':'signUpHandler', 'x':416, 'y':218, 'width':119, 'height':124, 'attrs':'name|email|pword', 'meths':'get|post'}
+{'type':'umlshape', 'id':'tornado.websocket.WebSocketHandler', 'x':367, 'y':51, 'width':296, 'height':29, 'attrs':'', 'meths':''}
+{'type':'umlshape', 'id':'tornado.web.RequestHandler', 'x':216, 'y':506, 'width':228, 'height':29, 'attrs':'', 'meths':''}
+{'type':'umlshape', 'id':'MongoClient', 'x':469, 'y':166, 'width':102, 'height':29, 'attrs':'', 'meths':''}
+{'type':'umlshape', 'id':'thread.start_new_thread', 'x':419, 'y':431, 'width':203, 'height':29, 'attrs':'', 'meths':''}
+{'type':'edge', 'id':'MainHandler_to_BaseHandler', 'source':'MainHandler', 'target':'BaseHandler', 'uml_edge_type':'generalisation'}
+{'type':'edge', 'id':'LoginHandler_to_BaseHandler', 'source':'LoginHandler', 'target':'BaseHandler', 'uml_edge_type':'generalisation'}
+{'type':'edge', 'id':'WSHandler_to_tornado.websocket.WebSocketHandler', 'source':'WSHandler', 'target':'tornado.websocket.WebSocketHandler', 'uml_edge_type':'generalisation'}
+{'type':'edge', 'id':'BaseHandler_to_tornado.web.RequestHandler', 'source':'BaseHandler', 'target':'tornado.web.RequestHandler', 'uml_edge_type':'generalisation'}
+{'type':'edge', 'id':'MydeviceHandler_to_BaseHandler', 'source':'MydeviceHandler', 'target':'BaseHandler', 'uml_edge_type':'generalisation'}
+{'type':'edge', 'id':'DocsHandler_to_BaseHandler', 'source':'DocsHandler', 'target':'BaseHandler', 'uml_edge_type':'generalisation'}
+{'type':'edge', 'id':'CreateHandler_to_BaseHandler', 'source':'CreateHandler', 'target':'BaseHandler', 'uml_edge_type':'generalisation'}
+{'type':'edge', 'id':'LogoutHandler_to_BaseHandler', 'source':'LogoutHandler', 'target':'BaseHandler', 'uml_edge_type':'generalisation'}
+{'type':'edge', 'id':'signUpHandler_to_tornado.web.RequestHandler', 'source':'signUpHandler', 'target':'tornado.web.RequestHandler', 'uml_edge_type':'generalisation'}
+{'type':'edge', 'id':'MongoClient_to_WSHandler', 'source':'MongoClient', 'target':'WSHandler', 'uml_edge_type':'composition'}
+{'type':'edge', 'id':'thread.start_new_thread_to_WSHandler', 'source':'thread.start_new_thread', 'target':'WSHandler', 'uml_edge_type':'composition'}

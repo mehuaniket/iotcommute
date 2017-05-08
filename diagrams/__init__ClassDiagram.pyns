@@ -1,0 +1,7 @@
+# PynSource Version 1.1
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin.'}
+{'type':'umlshape', 'id':'WebSocket', 'x':182, 'y':134, 'width':381, 'height':435, 'attrs':'READ_TIMEOUT|RECONNECT_INTERVAL|RECONNECT_TRIES|_root|socket_url|socket|on_tick|on_message|on_close|on_error|on_connect|on_reconnect|subscribed_tokens|modes|websocket_thread', 'meths':'__init__|_create_connection|connect|is_connected|reconnect|close|_on_connect|_on_data|_on_close|_on_error|_on_message|send_message|get_state|send_payload'}
+{'type':'umlshape', 'id':'object', 'x':10, 'y':340, 'width':60, 'height':29, 'attrs':'', 'meths':''}
+{'type':'umlshape', 'id':'threading.Thread', 'x':633, 'y':71, 'width':144, 'height':29, 'attrs':'', 'meths':''}
+{'type':'edge', 'id':'WebSocket_to_object', 'source':'WebSocket', 'target':'object', 'uml_edge_type':'generalisation'}
+{'type':'edge', 'id':'threading.Thread_to_WebSocket', 'source':'threading.Thread', 'target':'WebSocket', 'uml_edge_type':'composition'}
